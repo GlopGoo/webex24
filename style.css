@@ -1,6 +1,53 @@
 * {
-    border: 1px solid #000;
-    padding: 1rem;
+    margin: 0;
+    padding: 5px;
     font-family: Arial;
     text-align: left;
+    background-color: lightgray;
+}
+
+#navigasjon-felt {
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: left;
+}
+
+#nav-link {
+    list-style: none;
+    text-decoration: none;
+}
+
+#Populære-produkter {
+    list-style: none;
+}
+
+#pop-pro-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#kategorier-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+#anm {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Opplysninger-form {
+    display: block;
+    columns: 1 ;
+    justify-content: space-evenly;
+}
+
+#Levering-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+#foot-link {
+    display: flex;
+    justify-content: space-between;
 }

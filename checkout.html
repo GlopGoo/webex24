@@ -2,54 +2,193 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>checkout</title>
+        <title>hjemeside</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Hjem</a></li>
-                    <li><a href="product.html">product</a></li>
-                    <li><a href="checkout.html">checkout</a></li>
+        <header id="page-top">
+            <nav class="container" id="navigasjon-felt">
+                <ul id="nav-link">
+                <form id="søk-form" method="get" role="search">
+                    <label class="search" for="Søk">
+                        <input type="text" id="søk-bar" name="søk-bar" placeholder="Søk...">
+                    </label>
+                    <input type="button" value="søk">
+                </form>
+                <br>
+                <li><a href="index.html" target="_top">Hjem</a></li>
+                <li><a href="index.html" target="Populære-produkter">Produkter</a></li>
+                <h1><a href="index.html" target="_top">Logo</a></h1>
+                <li><a href="index.html" target="kategorier">Kategorier</a></li>
+                <li><a href="index.html" target="footer">Kontakt oss</a></li>
+                <li><a href="#"><img src="#" alt="Profil"></a></li>
+                <li><a href="#"><img src="#" alt="Bokmerker"></a></li>
+                <li><a href="checkout.html"><img src="#" alt="Kasse"></a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section>
-                <h2>Kasse</h2>
-                <section>
-                    <p>bag</p>
-                    <li>
-                        <p>produkt-1</p>
-                        <p>product-2</p>
-                        <p>product-3</p>
-                    </li>
+                <h2>1. Handlevogn</h2>
+                <section id="product-mal">
+                    <article id="product-handle">
+                        <a href="index.html">
+                        <img src="#" alt="bilde">
+                        <h3>produktnavn</h3>
+                        <p>2000kr</p>
+                        <p>info</p>
+                        </a>
+                    </article>
+                    <article id="product-handle">
+                        <a href="index.html">
+                        <img src="#" alt="bilde">
+                        <h3>produktnavn</h3>
+                        <p>pris</p>
+                        <p>info</p>
+                        </a>
+                    </article>
+                    <article id="product-handle">
+                        <a href="index.html">
+                        <img src="#" alt="bilde">
+                        <h3>produktnavn</h3>
+                        <p>pris</p>
+                        <p>info</p>
+                        </a>
+                    </article>
                 </section>
             </section>
             <section>
-                <h2>Opplysninger</h2>
-                <form action=""></form>
+                <h2>2. Opplysninger</h2>
+                <form id="Opplysninger-form">
+                    <p>Leveringsadresse</p>
+                    <label for="fornavn">
+                        <input type="text" name="fornavn" id="fornavn" maxlength="25" pattern="[A-Za-zæøåÆØÅ ]{2,}" required placeholder="Fornavn...">
+                    </label>
+                    <br>
+                    <label for="etternavn">
+                        <input type="text" name="etternavn" id="etternavn" maxlength="25" required placeholder="Etternavn...">
+                    </label>
+                    <br>
+                    <label for="gateadresse">
+                        <input type="text" name="gateadresse" id="gateadresse" maxlength="30" required placeholder="Gateadresse...">
+                    </label>
+                    <br>
+                    <label for="postnummer">
+                        <input type="text" name="postnummer" id="postnummer" maxlength="20" required placeholder="Postnummer...">
+                    </label>
+                    <br>
+                    <input type="submit" value="Lagre">
+                    <br>
+                </form>
+                <a href="#">Avbryt</a>
             </section>
             <section>
-                <h2>Levering</h2>
-                <form action=""></form>
+                <h2>3. Levering</h2>
+                <form id="Levering-form">
+                    <label for="Valg-1">
+                        <input type="radio" id="Valg-1" name="Valg-1" value="Valg-1">
+                        <span>Valg-1</span>
+                    </label>
+                    <br>
+                    <label for="Valg-2">
+                        <input type="radio" id="Valg-2" name="Valg-2" value="Valg-2">
+                        <span>Valg-2</span>
+                    </label>
+                    <br>
+                    <label for="Valg-3">
+                        <input type="radio" id="Valg-3" name="Valg-3" value="Valg-3">
+                        <span>Valg-3</span>
+                    </label>
+                    <br>
+                </form>
+                <br>
             </section>
+            <br>
             <section>
-                <h2>Betaling</h2>
-                <p>pris</p>
-                <p>knapp</p>
-                <p>avhuk, terms</p>
+                <h2>4. Betaling</h2>
+                <form id="Betaling-form">
+                    <br>
+                    <label for="kortnummer">
+                        <p>Kortnummer</p>
+                        <input type="number" name="kortnummer" id="kortnummer" pattern="[0-9]{16}" required placeholder="342342****4435">
+                    </label>
+                    <br>
+                    <label for="utløpsdato">
+                        <p>Utløpsdato</p>
+                        <input type="date" name="utløpsdato" id="utløpsdato" required>
+                    </label>
+                    <br>
+                    <label for="CVC/CVV">
+                        <p>CVC/CVV</p>
+                        <input type="number" name="CVC/CVV" id="CVC/CVV" pattern="[0-9]{4}" required placeholder="CVC/CVV">
+                    </label>
+                    <br>
+                
+                <H4>Å batale inkl. mva.</H4>
+                <h4>5000 kr</h4>
+
+                    <br>
+                    <input type="submit" value="fulfør">
+                    <br>
+                    <p>Opplysninger info</p>
+                    <br>
+                    <input type="checkbox" name="email-ja" id="e-ja" value="Ja">
+                    <label for="email-ja">Ja takk! Send nyhetsbrev til meg</label>
+                    <br>
+                    <input type="checkbox" name="text-ja" id="t-ja" value="Ja">
+                    <label for="text-ja">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter</label>
+                </form>
             </section>
         </main>
     </body>
     <footer>
-        <ul>
-            <img src="#" alt="Logo">
-            <p>Kontakt</p>
-            <p>Snarvei</p>
-            <p>Sosial</p>
-        </ul>
+        <a href="#"><h2>Logo</h2></a>
+        <p>Ye frosk</p>
+        <section>
+            <h2>Kontakt</h2>
+        <li>
+            <img src="#" alt="">
+            <h4>Adresse:</h4>
+            <p>B R A Veien4, 1757 Halden</p>
+        </li>
+        <li>
+            <img src="#" alt="">
+            <h4>Telefon: </h4>
+            <p>69 60 80 00</p>
+        </li>
+        <li>
+            <img src="#" alt="">
+            <h4>E-post</h4>
+            <p>halden@hiof.no</p>
+        </li>
+        <li>
+            <img src="#" alt="">
+            <h4>Åpningstider: </h4>
+            <p>Stenger 15:00</p>
+        </li>
+        </section>
+        <section>
+            <h2>Snarveier</h2>
+            <br>
+            <a href="index.html">Produkter</a>
+            <br>
+            <a href="index.html">Kategorier</a>
+            <br>
+            <a href="#">Kontakt oss</a>
+        </section>
+        <section>
+            <h2>SOSIALE MEDIER</h2>
+            <br>
+            <a href="#"><img src="#" alt="instagram"></a>
+            <br>
+            <a href="#"><img src="#" alt="facebook"></a>
+            <br>
+            <a href="#"><img src="#" alt="in"></a>
+            <br>
+            <a href="#"><img src="#" alt="pintrest"></a>
+            <br>
+        </section>
     </footer>
 </html>

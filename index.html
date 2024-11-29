@@ -2,25 +2,41 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>hjemeside</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Hjem</a></li>
-                    <li><a href="product.html">product</a></li>
-                    <li><a href="checkout.html">checkout</a></li>
+        <header id="page-top">
+            <nav class="container" id="navigasjon-felt">
+                <ul id="nav-link">
+                <form id="søk-form" method="get" role="search">
+                    <label class="search" for="Søk">
+                        <input type="text" id="søk-bar" name="søk-bar" placeholder="Søk...">
+                    </label>
+                    <input type="button" value="søk">
+                </form>
+                <br>
+                <li><a href="index.html" target="_top">Hjem</a></li>
+                <li><a href="index.html" target="Populære-produkter">Produkter</a></li>
+                <h1><a href="index.html" target="_top">Logo</a></h1>
+                <li><a href="index.html" target="kategorier">Kategorier</a></li>
+                <li><a href="index.html" target="footer">Kontakt oss</a></li>
+                <li><a href="#"><img src="#" alt="Profil"></a></li>
+                <li><a href="#"><img src="#" alt="Bokmerker"></a></li>
+                <li><a href="checkout.html"><img src="#" alt="Kasse"></a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section id="element-1.email-liste">
-                <h1>email liste</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <a href="#">prøve</a>
+            <section id="banner">
+                <article>
+                    <a href="#">
+                        <h1>banner element</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </a>
+                </article>
             </section>
             <section id="Populære-produkter">
                 <h2>Populære produkter</h2>
@@ -32,25 +48,96 @@
                 </li>
             </section>
             <section id="product-mal">
-                <figure>
-                    <img src="" alt="produkt-bilde">
-                </figure>
-                <section>
-                    <p>produktnavn</p>
-                    <p>pris</p>
-                </section>
-                <a href="#">Les mer</a>
+                <article id="product-home">
+                    <a href="produkt.html">
+                    <img src="#" alt="bilde">
+                    <h3>produktnavn</h3>
+                    <p>2000kr</p>
+                    <p>info</p>
+                    </a>
+                </article>
+                <article id="product-home">
+                    <a href="produkt.html">
+                    <img src="#" alt="bilde">
+                    <h3>produktnavn</h3>
+                    <p>2000kr</p>
+                    <p>info</p>
+                    </a>
+                </article>
+                <article id="product-home">
+                    <a href="produkt.html">
+                    <img src="#" alt="bilde">
+                    <h3>produktnavn</h3>
+                    <p>2000kr</p>
+                    <p>info</p>
+                    </a>
+                </article>
+                <article id="product-home">
+                    <a href="produkt.html">
+                    <img src="#" alt="bilde">
+                    <h3>produktnavn</h3>
+                    <p>2000kr</p>
+                    <p>info</p>
+                    </a>
+                </article>
+                <article id="product-home">
+                    <a href="produkt.html">
+                    <img src="#" alt="bilde">
+                    <h3>produktnavn</h3>
+                    <p>2000kr</p>
+                    <p>info</p>
+                    </a>
+                </article>
             </section>
             <section id="kategorier">
-                <h2>kategorier</h2>
-                <section id="kategorier-box">
-                    <p>kategori-1</p>
-                    <img src="#" alt="kat-1">
-                </section>
+                <h2>kategori</h2>
+                <article>
+                    <a href="produkt.html"><img src="#" alt="kategori-1"></a>
+                </article>
+                <article>
+                    <a href="produkt.html"><img src="#" alt="kategori-2"></a>
+                </article>
+                <article>
+                    <a href="produkt.html"><img src="#" alt="kategori-3"></a>
+                </article>
+                <article>
+                    <a href="produkt.html"><img src="#" alt="kategori-4"></a>
+                </article>
+                <article>
+                    <a href="produkt.html"><img src="#" alt="kategori-5"></a>
+                </article>
+                <article>
+                    <a href="produkt.html"><img src="#" alt="kategori-6"></a>
+                </article>
             </section>
             <section id="anmeldelser">
                 <h2>anmeldelser</h2>
-                <article id="anm-1">
+                <article id="anm">
+                    <img src="#" alt="profil-bilde-1">
+                    <p>navn</p>
+                    <p>innhold</p>
+                </article>
+                <article id="anm">
+                    <img src="#" alt="profil-bilde-1">
+                    <p>navn</p>
+                    <p>innhold</p>
+                </article>
+                <article id="anm">
+                    <img src="#" alt="profil-bilde-1">
+                    <p>navn</p>
+                    <p>innhold</p>
+                </article>
+                <article id="anm">
+                    <img src="#" alt="profil-bilde-1">
+                    <p>navn</p>
+                    <p>innhold</p>
+                </article>
+                <article id="anm">
+                    <img src="#" alt="profil-bilde-1">
+                    <p>navn</p>
+                    <p>innhold</p>
+                </article>
+                <article id="anm">
                     <img src="#" alt="profil-bilde-1">
                     <p>navn</p>
                     <p>innhold</p>
@@ -58,12 +145,52 @@
             </section>
         </main>
     </body>
-    <footer>
-        <ul>
-            <img src="#" alt="Logo">
-            <p>Kontakt</p>
-            <p>Snarvei</p>
-            <p>Sosial</p>
-        </ul>
+    <footer id="footer">
+        <a href="#"><h2>Logo</h2></a>
+        <p>Ye frosk</p>
+        <section>
+            <h2>Kontakt</h2>
+        <li>
+            <img src="#" alt="">
+            <h4>Adresse:</h4>
+            <p>B R A Veien4, 1757 Halden</p>
+        </li>
+        <li>
+            <img src="#" alt="">
+            <h4>Telefon: </h4>
+            <p>69 60 80 00</p>
+        </li>
+        <li>
+            <img src="#" alt="">
+            <h4>E-post</h4>
+            <p>halden@hiof.no</p>
+        </li>
+        <li>
+            <img src="#" alt="">
+            <h4>Åpningstider: </h4>
+            <p>Stenger 15:00</p>
+        </li>
+        </section>
+        <section>
+            <h2>Snarveier</h2>
+            <br>
+            <a href="index.html">Produkter</a>
+            <br>
+            <a href="index.html">Kategorier</a>
+            <br>
+            <a href="#">Kontakt oss</a>
+        </section>
+        <section>
+            <h2>SOSIALE MEDIER</h2>
+            <br>
+            <a href="#"><img src="#" alt="instagram"></a>
+            <br>
+            <a href="#"><img src="#" alt="facebook"></a>
+            <br>
+            <a href="#"><img src="#" alt="in"></a>
+            <br>
+            <a href="#"><img src="#" alt="pintrest"></a>
+            <br>
+        </section>
     </footer>
 </html>
